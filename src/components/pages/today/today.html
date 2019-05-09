@@ -1,6 +1,7 @@
 <div>
   <VeggieCard
     v-for="veg in veggies"
+    v-if="veg.months.includes(currentMonth)"
     :key="veg.name"
     :title="veg.name"
     :imgUrl="veg.url"

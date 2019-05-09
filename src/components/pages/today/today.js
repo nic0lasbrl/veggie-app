@@ -1,12 +1,14 @@
 import VeggieCard from "../../standalone/veggieCard/veggieCard.vue";
 
 const name = "Today";
+const currentMonth = new Date().getMonth();
 const data = () => ({
+  currentMonth,
   veggies: [
     {
       name: "Ail",
       type: "vegetable",
-      months: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      months: [0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11],
       url:
         "https://dl.airtable.com/.attachmentThumbnails/946c5267252959d14370ff4431bfb03b/44a755ce"
     },
