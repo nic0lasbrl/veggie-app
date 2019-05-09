@@ -1,0 +1,856 @@
+{
+    "Ail": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Betterave": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Carotte": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Chou": {
+        "type": "vegetable",
+        "months": [
+            0,
+            2,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Chou de Bruxelles": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Courge": {
+        "type": "vegetable",
+        "months": [
+            0,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Crosne": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            10,
+            11
+        ]
+    },
+    "C\\u00e9leri": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Endive": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            9,
+            10,
+            11
+        ]
+    },
+    "Fris\\u00e9e": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "M\\u00e2che": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            10,
+            11
+        ]
+    },
+    "Navet": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            10,
+            11
+        ]
+    },
+    "Oignon": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Panais": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Poireau": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Pomme de terre": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Salsifi": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            9,
+            10,
+            11
+        ]
+    },
+    "Topinambour": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            9,
+            10,
+            11
+        ]
+    },
+    "\\u00c9pinard": {
+        "type": "vegetable",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Citron": {
+        "type": "fruit",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            9,
+            10,
+            11
+        ]
+    },
+    "Cl\\u00e9mentine": {
+        "type": "fruit",
+        "months": [
+            0,
+            1,
+            10,
+            11
+        ]
+    },
+    "Kiwi": {
+        "type": "fruit",
+        "months": [
+            0,
+            1,
+            2,
+            10,
+            11
+        ]
+    },
+    "Mandarine": {
+        "type": "fruit",
+        "months": [
+            0,
+            1,
+            10,
+            11
+        ]
+    },
+    "Orange": {
+        "type": "fruit",
+        "months": [
+            0,
+            1,
+            2,
+            10,
+            11
+        ]
+    },
+    "Pamplemousse": {
+        "type": "fruit",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    "Poire": {
+        "type": "fruit",
+        "months": [
+            0,
+            1,
+            2,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Pomme": {
+        "type": "fruit",
+        "months": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Radis": {
+        "type": "vegetable",
+        "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Asperge": {
+        "type": "vegetable",
+        "months": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    "Blette": {
+        "type": "vegetable",
+        "months": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "Chou-fleur": {
+        "type": "vegetable",
+        "months": [
+            2,
+            3,
+            4,
+            8,
+            9,
+            10
+        ]
+    },
+    "Artichaut": {
+        "type": "vegetable",
+        "months": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "Concombre": {
+        "type": "vegetable",
+        "months": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "Laitue": {
+        "type": "vegetable",
+        "months": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "Petit pois": {
+        "type": "vegetable",
+        "months": [
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    "Aubergine": {
+        "type": "vegetable",
+        "months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "Courgette": {
+        "type": "vegetable",
+        "months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "Pomme de terre primeur": {
+        "type": "vegetable",
+        "months": [
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "Cerise": {
+        "type": "fruit",
+        "months": [
+            4,
+            5,
+            6
+        ]
+    },
+    "Fraise": {
+        "type": "fruit",
+        "months": [
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "Rhubarbe": {
+        "type": "fruit",
+        "months": [
+            4,
+            5,
+            6
+        ]
+    },
+    "Tomate": {
+        "type": "fruit",
+        "months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "Brocoli": {
+        "type": "vegetable",
+        "months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "Fenouil": {
+        "type": "vegetable",
+        "months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "Haricot vert": {
+        "type": "vegetable",
+        "months": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "Poivron": {
+        "type": "vegetable",
+        "months": [
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "Abricot": {
+        "type": "fruit",
+        "months": [
+            5,
+            6,
+            7
+        ]
+    },
+    "Cassis": {
+        "type": "fruit",
+        "months": [
+            5,
+            6,
+            7
+        ]
+    },
+    "Framboise": {
+        "type": "fruit",
+        "months": [
+            5,
+            6,
+            7,
+            9
+        ]
+    },
+    "Groseille": {
+        "type": "fruit",
+        "months": [
+            5,
+            6,
+            7
+        ]
+    },
+    "Melon": {
+        "type": "fruit",
+        "months": [
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "Past\\u00e8que": {
+        "type": "fruit",
+        "months": [
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "Prune": {
+        "type": "fruit",
+        "months": [
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "P\\u00eache": {
+        "type": "fruit",
+        "months": [
+            5,
+            6,
+            7,
+            8
+        ]
+    }, "Avoine d'hiver": {
+        "type": "cereal",
+        "months": [
+            5,
+            6,
+            7,
+            11
+        ]
+    },
+    "Avoine de printemps": {
+        "type": "cereal",
+        "months": [
+            5,
+            6,
+            7,
+            11
+        ]
+    }, "Colza d'hiver et de printemps": {
+        "type": "cereal",
+        "months": [
+            5,
+            6
+        ]
+    }, "Orge d'hiver": {
+        "type": "cereal",
+        "months": [
+            5,
+            6,
+            6,
+            7,
+            11
+        ]
+    },
+    "Pois": {
+        "type": "cereal",
+        "months": [
+            5,
+            6,
+            7,
+            11
+        ]
+    },
+    "Seigle": {
+        "type": "cereal",
+        "months": [
+            5,
+            6,
+            7,
+            11
+        ]
+    },
+    "Ma\\u00efs": {
+        "type": "vegetable",
+        "months": [
+            6,
+            7,
+            8,
+            9,
+            9,
+            10
+        ]
+    },
+    "Figue": {
+        "type": "fruit",
+        "months": [
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "F\\u00e9veroles et f\\u00e8ves": {
+        "type": "fruit",
+        "months": [
+            6,
+            7,
+            11
+        ]
+    },
+    "Myrtille": {
+        "type": "fruit",
+        "months": [
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "Nectarine": {
+        "type": "fruit",
+        "months": [
+            6,
+            7
+        ]
+    }, "Bl\\u00e9 dur d'hiver et de printemps": {
+        "type": "cereal",
+        "months": [
+            6,
+            7,
+            11
+        ]
+    }, "Bl\\u00e9 tendre d'hiver et de printemps": {
+        "type": "cereal",
+        "months": [
+            6,
+            7,
+            11
+        ]
+    },
+    "Orge de printemps": {
+        "type": "cereal",
+        "months": [
+            6,
+            7,
+            11
+        ]
+    },
+    "Triticale": {
+        "type": "cereal",
+        "months": [
+            6,
+            7
+        ]
+    },
+    "Mirabelle": {
+        "type": "fruit",
+        "months": [
+            7,
+            8
+        ]
+    },
+    "M\\u00fbre": {
+        "type": "fruit",
+        "months": [
+            7,
+            8
+        ]
+    },
+    "Noisette": {
+        "type": "fruit",
+        "months": [
+            7,
+            8,
+            9
+        ]
+    },
+    "Pruneau": {
+        "type": "fruit",
+        "months": [
+            7,
+            8
+        ]
+    },
+    "Raisin": {
+        "type": "fruit",
+        "months": [
+            7,
+            8,
+            9
+        ]
+    },
+    "Potiron": {
+        "type": "vegetable",
+        "months": [
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "Coing": {
+        "type": "fruit",
+        "months": [
+            8,
+            9,
+            10
+        ]
+    },
+    "Noix": {
+        "type": "fruit",
+        "months": [
+            8,
+            9
+        ]
+    },
+    "Tournesol": {
+        "type": "cereal",
+        "months": [
+            8
+        ]
+    },
+    "Rutabaga": {
+        "type": "vegetable",
+        "months": [
+            9,
+            10,
+            11
+        ]
+    },
+    "Ch\\u00e2taigne": {
+        "type": "fruit",
+        "months": [
+            9,
+            10,
+            11
+        ]
+    },
+    "Riz": {
+        "type": "cereal",
+        "months": [
+            9
+        ]
+    },
+    "Soja": {
+        "type": "cereal",
+        "months": [
+            9
+        ]
+    },
+    "Sorgho": {
+        "type": "cereal",
+        "months": [
+            9,
+            10
+        ]
+    },
+    "Cardon": {
+        "type": "vegetable",
+        "months": [
+            10
+        ]
+    },
+    "Citrouille": {
+        "type": "vegetable",
+        "months": [
+            10
+        ]
+    }
+}
