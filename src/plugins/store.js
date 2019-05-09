@@ -26,8 +26,15 @@ const actions = {
   }
 };
 
+const getters = {
+  fruits: state => state.veggies.filter(food => food.type === "fruit"),
+  vegetables: state => state.veggies.filter(food => food.type === "vegetable"),
+  cereals: state => state.veggies.filter(food => food.type === "cereal")
+};
+
 export default new Vuex.Store({
   state,
   mutations,
+  getters,
   actions
 });

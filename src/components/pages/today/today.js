@@ -1,5 +1,5 @@
 import VeggieCard from "../../standalone/veggieCard/veggieCard.vue";
-import { mapState } from "vuex";
+import { mapGetters } from "vuex";
 
 const name = "Today";
 const currentMonth = new Date().getMonth();
@@ -7,7 +7,7 @@ const data = () => ({
   currentMonth
 });
 const computed = {
-  ...mapState(["veggies"])
+  ...mapGetters(["fruits", "vegetables", "cereals"])
 };
 const components = {
   VeggieCard

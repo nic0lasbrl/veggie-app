@@ -1,9 +1,35 @@
-<div>
-  <VeggieCard
-    v-for="veg in veggies"
-    v-if="veg.months.includes(currentMonth)"
-    :key="veg.name"
-    :title="veg.name"
-    :imgUrl="veg.url"
-  ></VeggieCard>
-</div>
+<v-tabs background-color="white" color="green" centered>
+  <v-tab>Légumes</v-tab>
+  <v-tab>Fruits</v-tab>
+  <v-tab>Céréales</v-tab>
+
+  <v-tab-item>
+    <VeggieCard
+      v-for="veg in vegetables"
+      v-if="veg.months.includes(currentMonth)"
+      :key="veg.name"
+      :title="veg.name"
+      :imgUrl="veg.url"
+    ></VeggieCard>
+  </v-tab-item>
+
+  <v-tab-item>
+    <VeggieCard
+      v-for="veg in fruits"
+      v-if="veg.months.includes(currentMonth)"
+      :key="veg.name"
+      :title="veg.name"
+      :imgUrl="veg.url"
+    ></VeggieCard>
+  </v-tab-item>
+
+  <v-tab-item>
+    <VeggieCard
+      v-for="veg in cereals"
+      v-if="veg.months.includes(currentMonth)"
+      :key="veg.name"
+      :title="veg.name"
+      :imgUrl="veg.url"
+    ></VeggieCard>
+  </v-tab-item>
+</v-tabs>
