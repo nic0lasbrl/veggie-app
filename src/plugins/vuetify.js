@@ -7,7 +7,8 @@ import Vuetify, {
   VCardTitle,
   VCardText,
   VCardActions,
-  VBtn
+  VBtn,
+  VFadeTransition
 } from "vuetify/lib";
 import "vuetify/src/styles/main.sass";
 
@@ -19,7 +20,8 @@ Vue.use(Vuetify, {
     VCardTitle,
     VCardText,
     VCardActions,
-    VBtn
+    VBtn,
+    VFadeTransition
   }
 });
 
