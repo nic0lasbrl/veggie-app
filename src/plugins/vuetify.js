@@ -11,7 +11,10 @@ import Vuetify, {
   VFadeTransition,
   VTabs,
   VTab,
-  VTabItem
+  VTabItem,
+  VLayout,
+  VContainer,
+  VFlex
 } from "vuetify/lib";
 import "vuetify/src/styles/main.sass";
 
@@ -27,7 +30,10 @@ Vue.use(Vuetify, {
     VFadeTransition,
     VTabs,
     VTab,
-    VTabItem
+    VTabItem,
+    VLayout,
+    VContainer,
+    VFlex
   }
 });
 

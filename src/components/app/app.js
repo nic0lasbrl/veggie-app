@@ -19,7 +19,9 @@ const shapeVeggieRecord = (record, months) => {
     name: record.get("Name"),
     type: record.get("Type"),
     months: veggieMonths,
-    url: attachment ? attachment.url : ""
+    url: attachment
+      ? attachment.url
+      : "https://cdn.pixabay.com/photo/2012/12/27/19/39/character-72718_640.jpg"
   };
 };
 

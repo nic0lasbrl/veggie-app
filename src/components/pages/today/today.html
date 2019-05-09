@@ -4,32 +4,44 @@
   <v-tab>Céréales</v-tab>
 
   <v-tab-item>
-    <VeggieCard
-      v-for="veg in vegetables"
-      v-if="veg.months.includes(currentMonth)"
-      :key="veg.name"
-      :title="veg.name"
-      :imgUrl="veg.url"
-    ></VeggieCard>
+    <v-container>
+      <v-layout row wrap>
+        <VeggieCard
+          v-for="veg in vegetables"
+          v-if="veg.months.includes(currentMonth)"
+          :key="veg.name"
+          :title="veg.name"
+          :imgUrl="veg.url"
+        ></VeggieCard>
+      </v-layout>
+    </v-container>
   </v-tab-item>
 
   <v-tab-item>
-    <VeggieCard
-      v-for="veg in fruits"
-      v-if="veg.months.includes(currentMonth)"
-      :key="veg.name"
-      :title="veg.name"
-      :imgUrl="veg.url"
-    ></VeggieCard>
+    <v-container>
+      <v-layout row wrap>
+        <VeggieCard
+          v-for="veg in fruits"
+          v-if="veg.months.includes(currentMonth)"
+          :key="veg.name"
+          :title="veg.name"
+          :imgUrl="veg.url"
+        ></VeggieCard>
+      </v-layout>
+    </v-container>
   </v-tab-item>
 
   <v-tab-item>
-    <VeggieCard
-      v-for="veg in cereals"
-      v-if="veg.months.includes(currentMonth)"
-      :key="veg.name"
-      :title="veg.name"
-      :imgUrl="veg.url"
-    ></VeggieCard>
+    <v-container>
+      <v-layout row wrap>
+        <VeggieCard
+          v-for="veg in cereals"
+          v-if="veg.months.includes(currentMonth)"
+          :key="veg.name"
+          :title="veg.name"
+          :imgUrl="veg.url"
+        ></VeggieCard>
+      </v-layout>
+    </v-container>
   </v-tab-item>
 </v-tabs>
