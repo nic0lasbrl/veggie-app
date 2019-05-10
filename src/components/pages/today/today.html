@@ -1,0 +1,51 @@
+<v-tabs background-color="white" color="green" centered>
+  <v-tab>Légumes</v-tab>
+  <v-tab>Fruits</v-tab>
+  <v-tab>Céréales</v-tab>
+
+  <v-tab-item>
+    <v-container>
+      <v-layout row wrap justify-space-around>
+        <VeggieCard
+          v-for="veg in vegetables"
+          v-if="veg.months.includes(currentMonth)"
+          :key="veg.name"
+          :title="veg.name"
+          :imgUrl="veg.url"
+          :months="veg.months"
+        ></VeggieCard>
+      </v-layout>
+      <v-spacer></v-spacer>
+    </v-container>
+  </v-tab-item>
+
+  <v-tab-item>
+    <v-container>
+      <v-layout row wrap justify-space-around>
+        <VeggieCard
+          v-for="veg in fruits"
+          v-if="veg.months.includes(currentMonth)"
+          :key="veg.name"
+          :title="veg.name"
+          :months="veg.months"
+          :imgUrl="veg.url"
+        ></VeggieCard>
+      </v-layout>
+    </v-container>
+  </v-tab-item>
+
+  <v-tab-item>
+    <v-container>
+      <v-layout row wrap justify-space-around>
+        <VeggieCard
+          v-for="veg in cereals"
+          v-if="veg.months.includes(currentMonth)"
+          :key="veg.name"
+          :title="veg.name"
+          :imgUrl="veg.url"
+          :months="veg.months"
+        ></VeggieCard>
+      </v-layout>
+    </v-container>
+  </v-tab-item>
+</v-tabs>
