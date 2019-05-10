@@ -1,4 +1,4 @@
-<v-card class="mx-auto mb-2" max-width="400">
+<v-card class="mx-auto mb-2" max-width="400" width="100%">
   <v-img
     class="white--text"
     height="200px"
@@ -8,20 +8,9 @@
     <v-card-title class="align-end fill-height">{{ title }}</v-card-title>
   </v-img>
 
-  <!-- <v-card-text>
-    <span>Veggie Card</span><br />
-    <span class="text--primary">
-      <span>Whitehaven Beach</span><br />
-      <span>Whitsunday Island, Whitsunday Islands</span>
-    </span>
-  </v-card-text> -->
-
-  <!-- <v-card-actions>
-    <v-btn text color="orange">
-      Share
-    </v-btn>
-    <v-btn text color="orange">
-      Explore
-    </v-btn>
-  </v-card-actions> -->
+  <v-card-text
+    style="background-color: rgba(0,0,0,0.5); position: absolute; z-index: 2; top: 0; left: 0; height: 100%; width: 100%"
+  >
+    <MonthChart :vegMonths="months"></MonthChart>
+  </v-card-text>
 </v-card>

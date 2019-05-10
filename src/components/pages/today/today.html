@@ -12,6 +12,7 @@
           :key="veg.name"
           :title="veg.name"
           :imgUrl="veg.url"
+          :months="veg.months"
         ></VeggieCard>
       </v-layout>
     </v-container>
@@ -25,6 +26,7 @@
           v-if="veg.months.includes(currentMonth)"
           :key="veg.name"
           :title="veg.name"
+          :months="veg.months"
           :imgUrl="veg.url"
         ></VeggieCard>
       </v-layout>
@@ -40,6 +42,7 @@
           :key="veg.name"
           :title="veg.name"
           :imgUrl="veg.url"
+          :months="veg.months"
         ></VeggieCard>
       </v-layout>
     </v-container>
