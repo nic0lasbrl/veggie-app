@@ -1,13 +1,16 @@
 import { Chart } from "highcharts-vue";
 import { mapState } from "vuex";
 
+const currentMonth = new Date().getMonth();
+
 const chartOptions = function() {
   return {
     chart: {
       plotBackgroundColor: null,
       plotBorderWidth: 0,
       plotShadow: false,
-      backgroundColor: "transparent"
+      backgroundColor: "transparent",
+      margin: 0
     },
     credits: {
       enabled: false
@@ -31,30 +34,34 @@ const chartOptions = function() {
         startAngle: -170,
         endAngle: 170,
         center: ["50%", "50%"],
-        size: "170%",
-        animation: 0
+        size: "100%",
+        animation: 0,
+        slicedOffset: 7
       }
     },
     series: [
       {
-        type: "pie",
         name: "Browser share",
         innerSize: "50%",
-        data: this.chartData
+        data: this.chartData,
+        type: "pie"
       }
     ]
   };
 };
 
 const chartData = function() {
-  const data = this.rawMonths.map(month => ({
-    name: month.name,
-    y: 1,
-    color: "crimson",
-    dataLabels: {
-      enabled: false
-    }
-  }));
+  const data = this.rawMonths.map((month, index) => {
+    return {
+      name: month.name,
+      y: 1,
+      sliced: index === currentMonth,
+      color: "crimson",
+      dataLabels: {
+        enabled: false
+      }
+    };
+  });
   this.vegMonths.forEach(i => {
     data[i].color = "limegreen";
   });
