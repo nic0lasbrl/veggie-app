@@ -8,13 +8,8 @@ export default new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
-    {
-      path: "/",
-      redirect: "/today"
-    },
-    {
-      path: "/today",
-      component: Today
-    }
+    { path: "/", redirect: "/today" },
+    { path: "/today", component: Today },
+    { path: "/index.html", component: Today } // Fix for PWA at /index.html
   ]
 });
