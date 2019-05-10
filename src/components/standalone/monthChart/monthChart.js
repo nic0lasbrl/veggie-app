@@ -9,6 +9,9 @@ const chartOptions = function() {
       plotShadow: false,
       backgroundColor: "transparent"
     },
+    credits: {
+      enabled: false
+    },
     tooltip: {
       pointFormat: ""
     },
@@ -25,10 +28,11 @@ const chartOptions = function() {
             color: "white"
           }
         },
-        startAngle: -90,
-        endAngle: 90,
-        center: ["50%", "100%"],
-        size: "200%"
+        startAngle: -170,
+        endAngle: 170,
+        center: ["50%", "50%"],
+        size: "170%",
+        animation: 0
       }
     },
     series: [

@@ -14,7 +14,9 @@ import Vuetify, {
   VTabItem,
   VLayout,
   VContainer,
-  VFlex
+  VFlex,
+  VIcon,
+  VSpacer
 } from "vuetify/lib";
 import "vuetify/src/styles/main.sass";
 
@@ -33,7 +35,9 @@ Vue.use(Vuetify, {
     VTabItem,
     VLayout,
     VContainer,
-    VFlex
+    VFlex,
+    VIcon,
+    VSpacer
   }
 });
 

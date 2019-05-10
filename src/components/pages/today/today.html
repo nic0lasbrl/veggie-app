@@ -5,7 +5,7 @@
 
   <v-tab-item>
     <v-container>
-      <v-layout row wrap>
+      <v-layout row wrap justify-space-around>
         <VeggieCard
           v-for="veg in vegetables"
           v-if="veg.months.includes(currentMonth)"
@@ -15,12 +15,13 @@
           :months="veg.months"
         ></VeggieCard>
       </v-layout>
+      <v-spacer></v-spacer>
     </v-container>
   </v-tab-item>
 
   <v-tab-item>
     <v-container>
-      <v-layout row wrap>
+      <v-layout row wrap justify-space-around>
         <VeggieCard
           v-for="veg in fruits"
           v-if="veg.months.includes(currentMonth)"
@@ -35,7 +36,7 @@
 
   <v-tab-item>
     <v-container>
-      <v-layout row wrap>
+      <v-layout row wrap justify-space-around>
         <VeggieCard
           v-for="veg in cereals"
           v-if="veg.months.includes(currentMonth)"
