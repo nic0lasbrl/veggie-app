@@ -44,6 +44,14 @@ Vue.use(Vuetify, {
 const opts = {
   icons: {
     iconfont: "mdi" // default
+  },
+  theme: {
+    themes: {
+      light: {
+        primary: "#42b983",
+        secondary: "#8bc34a"
+      }
+    }
   }
 };
 
