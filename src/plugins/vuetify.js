@@ -1,4 +1,4 @@
-import "@mdi/font/css/materialdesignicons.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 import Vue from "vue";
 import Vuetify, {
   VApp,
@@ -12,11 +12,16 @@ import Vuetify, {
   VTabs,
   VTab,
   VTabItem,
+  VTabsItems,
   VLayout,
   VContainer,
   VFlex,
   VIcon,
-  VSpacer
+  VSpacer,
+  VAppBar,
+  VAppBarNavIcon,
+  VToolbarTitle,
+  VContent
 } from "vuetify/lib";
 import "vuetify/src/styles/main.sass";
 
@@ -33,17 +38,30 @@ Vue.use(Vuetify, {
     VTabs,
     VTab,
     VTabItem,
+    VTabsItems,
     VLayout,
     VContainer,
     VFlex,
     VIcon,
-    VSpacer
+    VSpacer,
+    VAppBar,
+    VAppBarNavIcon,
+    VToolbarTitle,
+    VContent
   }
 });
 
 const opts = {
   icons: {
-    iconfont: "mdi" // default
+    iconfont: "fa"
+  },
+  theme: {
+    themes: {
+      light: {
+        primary: "#42b983",
+        secondary: "#8bc34a"
+      }
+    }
   }
 };
 

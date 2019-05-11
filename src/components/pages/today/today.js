@@ -1,4 +1,5 @@
 import VeggieCard from "../../standalone/veggieCard/veggieCard.vue";
+import AppBar from "../../standalone/appBar/appBar.vue";
 import { mapGetters } from "vuex";
 
 const name = "Today";
@@ -10,7 +11,8 @@ const computed = {
   ...mapGetters(["fruits", "vegetables", "cereals"])
 };
 const components = {
-  VeggieCard
+  VeggieCard,
+  AppBar
 };
 const methods = {};
 const component = {
