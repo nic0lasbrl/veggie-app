@@ -1,4 +1,4 @@
-import "@mdi/font/css/materialdesignicons.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 import Vue from "vue";
 import Vuetify, {
   VApp,
@@ -53,7 +53,7 @@ Vue.use(Vuetify, {
 
 const opts = {
   icons: {
-    iconfont: "mdi" // default
+    iconfont: "fa"
   },
   theme: {
     themes: {

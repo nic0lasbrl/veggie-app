@@ -16,7 +16,7 @@
     >
       <v-spacer></v-spacer>
       <v-btn text icon color="white" @click="openMonthChart">
-        <v-icon large>mdi-calendar</v-icon>
+        <v-icon>far fa-calendar-alt</v-icon>
       </v-btn>
     </v-card-text>
 
@@ -26,7 +26,7 @@
       style="background-color: rgba(0,0,0,0.5); position: absolute; z-index: 2; top: 0; left: 0; height: 100%; width: 100%"
     >
       <v-btn text icon color="white" right absolute @click="closeMonthChart">
-        <v-icon>mdi-close</v-icon>
+        <v-icon>fas fa-times</v-icon>
       </v-btn>
       <MonthChart :vegMonths="months"></MonthChart>
     </v-card-text>
