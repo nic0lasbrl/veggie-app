@@ -12,11 +12,16 @@ import Vuetify, {
   VTabs,
   VTab,
   VTabItem,
+  VTabsItems,
   VLayout,
   VContainer,
   VFlex,
   VIcon,
-  VSpacer
+  VSpacer,
+  VAppBar,
+  VAppBarNavIcon,
+  VToolbarTitle,
+  VContent
 } from "vuetify/lib";
 import "vuetify/src/styles/main.sass";
 
@@ -33,11 +38,16 @@ Vue.use(Vuetify, {
     VTabs,
     VTab,
     VTabItem,
+    VTabsItems,
     VLayout,
     VContainer,
     VFlex,
     VIcon,
-    VSpacer
+    VSpacer,
+    VAppBar,
+    VAppBarNavIcon,
+    VToolbarTitle,
+    VContent
   }
 });
 
