@@ -19,10 +19,18 @@
         <v-container>
           <v-layout row wrap justify-space-around>
             <VeggieCard
-              v-for="veg in vegetables"
+              v-for="veg in favVegetables"
               v-if="veg.months.includes(currentMonth)"
               :key="veg.name"
-              :title="veg.name"
+              :name="veg.name"
+              :imgUrl="veg.url"
+              :months="veg.months"
+            ></VeggieCard>
+            <VeggieCard
+              v-for="veg in notFavVegetables"
+              v-if="veg.months.includes(currentMonth)"
+              :key="veg.name"
+              :name="veg.name"
               :imgUrl="veg.url"
               :months="veg.months"
             ></VeggieCard>
@@ -35,10 +43,18 @@
         <v-container>
           <v-layout row wrap justify-space-around>
             <VeggieCard
-              v-for="veg in fruits"
+              v-for="veg in favFruits"
               v-if="veg.months.includes(currentMonth)"
               :key="veg.name"
-              :title="veg.name"
+              :name="veg.name"
+              :months="veg.months"
+              :imgUrl="veg.url"
+            ></VeggieCard>
+            <VeggieCard
+              v-for="veg in notFavFruits"
+              v-if="veg.months.includes(currentMonth)"
+              :key="veg.name"
+              :name="veg.name"
               :months="veg.months"
               :imgUrl="veg.url"
             ></VeggieCard>
@@ -50,10 +66,18 @@
         <v-container>
           <v-layout row wrap justify-space-around>
             <VeggieCard
-              v-for="veg in cereals"
+              v-for="veg in favCereals"
               v-if="veg.months.includes(currentMonth)"
               :key="veg.name"
-              :title="veg.name"
+              :name="veg.name"
+              :imgUrl="veg.url"
+              :months="veg.months"
+            ></VeggieCard>
+            <VeggieCard
+              v-for="veg in notFavCereals"
+              v-if="veg.months.includes(currentMonth)"
+              :key="veg.name"
+              :name="veg.name"
               :imgUrl="veg.url"
               :months="veg.months"
             ></VeggieCard>

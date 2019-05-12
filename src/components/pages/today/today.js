@@ -8,7 +8,14 @@ const data = () => ({
   currentMonth
 });
 const computed = {
-  ...mapGetters(["fruits", "vegetables", "cereals"])
+  ...mapGetters([
+    "favFruits",
+    "notFavFruits",
+    "favVegetables",
+    "notFavVegetables",
+    "favCereals",
+    "notFavCereals"
+  ])
 };
 const components = {
   VeggieCard,
