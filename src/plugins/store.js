@@ -1,7 +1,13 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import localforage from "localforage";
+import VuexPersistence from "vuex-persist";
 
 Vue.use(Vuex);
+
+const vuexLocal = new VuexPersistence({
+  storage: localforage
+});
 
 const state = {
   veggies: [],
@@ -36,5 +42,6 @@ export default new Vuex.Store({
   state,
   mutations,
   getters,
-  actions
+  actions,
+  plugins: [vuexLocal.plugin]
 });
