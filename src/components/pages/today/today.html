@@ -15,49 +15,34 @@
         <v-icon color="primary">fas fa-seedling</v-icon>
       </v-tab>
 
-      <v-tab-item>
+      <v-tab-item
+        v-for="foodCategory in foodCategories"
+        :key="'tab-item-' + foodCategory"
+      >
         <v-container>
-          <v-layout row wrap justify-space-around>
+          <transition-group
+            tag="v-layout"
+            :name="foodCategory + '-list'"
+            class="layout row wrap justify-space-around"
+          >
             <VeggieCard
-              v-for="veg in vegetables"
-              v-if="veg.months.includes(currentMonth)"
-              :key="veg.name"
-              :title="veg.name"
-              :imgUrl="veg.url"
-              :months="veg.months"
+              v-for="food in food[foodCategory]['fav']"
+              v-if="food.months.includes(currentMonth)"
+              :key="food.name"
+              :name="food.name"
+              :imgUrl="food.url"
+              :months="food.months"
             ></VeggieCard>
-          </v-layout>
+            <VeggieCard
+              v-for="food in food[foodCategory]['notFav']"
+              v-if="food.months.includes(currentMonth)"
+              :key="food.name"
+              :name="food.name"
+              :imgUrl="food.url"
+              :months="food.months"
+            ></VeggieCard>
+          </transition-group>
           <v-spacer></v-spacer>
-        </v-container>
-      </v-tab-item>
-
-      <v-tab-item>
-        <v-container>
-          <v-layout row wrap justify-space-around>
-            <VeggieCard
-              v-for="veg in fruits"
-              v-if="veg.months.includes(currentMonth)"
-              :key="veg.name"
-              :title="veg.name"
-              :months="veg.months"
-              :imgUrl="veg.url"
-            ></VeggieCard>
-          </v-layout>
-        </v-container>
-      </v-tab-item>
-
-      <v-tab-item>
-        <v-container>
-          <v-layout row wrap justify-space-around>
-            <VeggieCard
-              v-for="veg in cereals"
-              v-if="veg.months.includes(currentMonth)"
-              :key="veg.name"
-              :title="veg.name"
-              :imgUrl="veg.url"
-              :months="veg.months"
-            ></VeggieCard>
-          </v-layout>
         </v-container>
       </v-tab-item>
     </v-tabs>

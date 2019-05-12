@@ -1,0 +1,5 @@
+.Vegetables-list-move,
+.Fruits-list-move,
+.Cereals-list-move {
+  transition: all 0.8s;
+}

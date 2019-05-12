@@ -11,7 +11,8 @@ const vuexLocal = new VuexPersistence({
 
 const state = {
   veggies: [],
-  months: []
+  months: [],
+  favorites: {}
 };
 
 const mutations = {
@@ -20,6 +21,12 @@ const mutations = {
   },
   setMonths(state, months) {
     state.months = [...months];
+  },
+  addToFavorites(state, foodID) {
+    state.favorites = { ...state.favorites, [foodID]: true };
+  },
+  removeFromFavorites(state, foodID) {
+    state.favorites = { ...state.favorites, [foodID]: false };
   }
 };
 
@@ -29,13 +36,31 @@ const actions = {
   },
   setMonths({ commit }, months) {
     commit("setMonths", months);
+  },
+  addToFavorites({ commit }, foodID) {
+    commit("addToFavorites", foodID);
+  },
+  removeFromFavorites({ commit }, foodID) {
+    commit("removeFromFavorites", foodID);
   }
 };
 
 const getters = {
   fruits: state => state.veggies.filter(food => food.type === "fruit"),
+  favFruits: (state, getters) =>
+    getters.fruits.filter(food => !!state.favorites[food.name]),
+  notFavFruits: (state, getters) =>
+    getters.fruits.filter(food => !state.favorites[food.name]),
   vegetables: state => state.veggies.filter(food => food.type === "vegetable"),
-  cereals: state => state.veggies.filter(food => food.type === "cereal")
+  favVegetables: (state, getters) =>
+    getters.vegetables.filter(food => !!state.favorites[food.name]),
+  notFavVegetables: (state, getters) =>
+    getters.vegetables.filter(food => !state.favorites[food.name]),
+  cereals: state => state.veggies.filter(food => food.type === "cereal"),
+  favCereals: (state, getters) =>
+    getters.cereals.filter(food => !!state.favorites[food.name]),
+  notFavCereals: (state, getters) =>
+    getters.cereals.filter(food => !state.favorites[food.name])
 };
 
 export default new Vuex.Store({

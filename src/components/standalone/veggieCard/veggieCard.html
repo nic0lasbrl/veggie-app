@@ -5,7 +5,7 @@
     :src="imgUrl"
     gradient="to bottom, rgba(0,0,0,0), rgba(0,0,0,.4)"
   >
-    <v-card-title class="align-end fill-height">{{ title }}</v-card-title>
+    <v-card-title class="align-end fill-height">{{ name }}</v-card-title>
   </v-img>
 
   <transition name="fade">
@@ -15,7 +15,18 @@
       style="background-color: rgba(0,0,0,0); position: absolute; z-index: 2; top: 0; left: 0; height: 100%; width: 100%; display: flex; align-items: flex-end; padding-bottom: 8px"
     >
       <v-spacer></v-spacer>
-      <v-btn text icon color="white" @click="openMonthChart">
+      <v-btn
+        v-if="isFavorite"
+        icon
+        color="#ffd700"
+        @click="removeFromFavorites(name)"
+      >
+        <v-icon>fas fa-star</v-icon>
+      </v-btn>
+      <v-btn v-else icon color="white" @click="addToFavorites(name)">
+        <v-icon>far fa-star</v-icon>
+      </v-btn>
+      <v-btn icon color="white" @click="openMonthChart">
         <v-icon>far fa-calendar-alt</v-icon>
       </v-btn>
     </v-card-text>
