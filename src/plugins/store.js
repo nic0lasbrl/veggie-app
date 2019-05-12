@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import localforage from "localforage";
 import VuexPersistence from "vuex-persist";
+import shuffle from "../helpers/shuffle";
 
 Vue.use(Vuex);
 
@@ -12,12 +13,16 @@ const vuexLocal = new VuexPersistence({
 const state = {
   veggies: [],
   months: [],
-  favorites: {}
+  favorites: {},
+  randomVeggieIndexes: []
 };
 
 const mutations = {
   setVeggies(state, veggies) {
     state.veggies = [...veggies];
+    if (state.randomVeggieIndexes.length !== veggies.length) {
+      state.randomVeggieIndexes = [...Array(veggies.length).keys()];
+    }
   },
   setMonths(state, months) {
     state.months = [...months];
@@ -27,6 +32,9 @@ const mutations = {
   },
   removeFromFavorites(state, foodID) {
     state.favorites = { ...state.favorites, [foodID]: false };
+  },
+  shuffle(state) {
+    state.randomVeggieIndexes = [...shuffle(state.randomVeggieIndexes)];
   }
 };
 
@@ -42,21 +50,29 @@ const actions = {
   },
   removeFromFavorites({ commit }, foodID) {
     commit("removeFromFavorites", foodID);
+  },
+  shuffle({ commit }) {
+    commit("shuffle");
   }
 };
 
 const getters = {
-  fruits: state => state.veggies.filter(food => food.type === "fruit"),
+  randVeggies: state =>
+    state.randomVeggieIndexes.map(index => state.veggies[index]),
+  fruits: (state, getters) =>
+    getters.randVeggies.filter(food => food.type === "fruit"),
   favFruits: (state, getters) =>
     getters.fruits.filter(food => !!state.favorites[food.name]),
   notFavFruits: (state, getters) =>
     getters.fruits.filter(food => !state.favorites[food.name]),
-  vegetables: state => state.veggies.filter(food => food.type === "vegetable"),
+  vegetables: (state, getters) =>
+    getters.randVeggies.filter(food => food.type === "vegetable"),
   favVegetables: (state, getters) =>
     getters.vegetables.filter(food => !!state.favorites[food.name]),
   notFavVegetables: (state, getters) =>
     getters.vegetables.filter(food => !state.favorites[food.name]),
-  cereals: state => state.veggies.filter(food => food.type === "cereal"),
+  cereals: (state, getters) =>
+    getters.randVeggies.filter(food => food.type === "cereal"),
   favCereals: (state, getters) =>
     getters.cereals.filter(food => !!state.favorites[food.name]),
   notFavCereals: (state, getters) =>
