@@ -63,7 +63,7 @@ const chartData = function() {
     };
   });
   this.vegMonths.forEach(i => {
-    data[i].color = "limegreen";
+    data[i].color = "#42b983";
   });
   return data;
 };
