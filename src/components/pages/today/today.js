@@ -5,7 +5,8 @@ import { mapGetters } from "vuex";
 const name = "Today";
 const currentMonth = new Date().getMonth();
 const data = () => ({
-  currentMonth
+  currentMonth,
+  foodCategories: ["Vegetables", "Fruits", "Cereals"]
 });
 const computed = {
   ...mapGetters([
@@ -15,7 +16,17 @@ const computed = {
     "notFavVegetables",
     "favCereals",
     "notFavCereals"
-  ])
+  ]),
+  food: function() {
+    const food = {};
+    for (const foodCategory of this.foodCategories) {
+      food[foodCategory] = {
+        fav: this["fav" + foodCategory],
+        notFav: this["notFav" + foodCategory]
+      };
+    }
+    return food;
+  }
 };
 const components = {
   VeggieCard,
