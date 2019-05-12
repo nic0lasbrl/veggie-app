@@ -59,7 +59,7 @@ const getters = {
   cereals: state => state.veggies.filter(food => food.type === "cereal"),
   favCereals: (state, getters) =>
     getters.cereals.filter(food => !!state.favorites[food.name]),
-  notFavc: (state, getters) =>
+  notFavCereals: (state, getters) =>
     getters.cereals.filter(food => !state.favorites[food.name])
 };
 
