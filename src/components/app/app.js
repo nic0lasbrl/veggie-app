@@ -17,6 +17,7 @@ const shapeVeggieRecord = (record, months) => {
 
   return {
     name: record.get("Name"),
+    nameEng: record.get("NameEng"),
     type: record.get("Type"),
     months: veggieMonths,
     url: attachment

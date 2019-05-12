@@ -17,7 +17,7 @@ const computed = {
     return !!this.favorites[this.name];
   }
 };
-const props = ["name", "imgUrl", "months"];
+const props = ["name", "nameEng", "imgUrl", "months"];
 const component = {
   name,
   data: () => ({
